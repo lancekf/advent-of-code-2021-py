@@ -10,7 +10,11 @@ day = f"day{day}"
 os.makedirs(day, exist_ok=True)
 
 f = open(f"{day}/part1.py", "w")
-f.write('input = open("input-test.txt").read().split("\\n")\n\n')
+f.write('''import os
+
+input = open(f"{os.path.dirname(__file__)}/input.txt").read().split("\\n")
+
+''')
 
 open(f"{day}/part2.py", "w")
 open(f"{day}/input.txt", "w")

@@ -1,4 +1,6 @@
-input = open("resources/day2-input.txt").read().split("\n")
+import os
+
+input = open(f"{os.path.dirname(__file__)}/input.txt").read().split("\n")
 
 horizontal = 0
 depth = 0
@@ -18,3 +20,5 @@ for step in input:
     print('{0},{1},{2} - {3}'.format(horizontal, depth, aim, step))
 
 print(horizontal*depth)
+
+print(dir)

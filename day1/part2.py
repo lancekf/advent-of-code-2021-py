@@ -1,4 +1,6 @@
-input = open("resources/day1-input.txt").read().split("\n")
+import os
+
+input = open(f"{os.path.dirname(__file__)}/input.txt").read().split("\n")
 
 def sum(list):
     total = 0
