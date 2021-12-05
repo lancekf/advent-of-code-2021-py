@@ -12,7 +12,7 @@ os.makedirs(day, exist_ok=True)
 f = open(f"{day}/part1.py", "w")
 f.write('''import os
 
-input = open(f"{os.path.dirname(__file__)}/input.txt").read().split("\\n")
+input = open(f"{os.path.dirname(__file__)}/input-test.txt").read().split("\\n")
 
 ''')
 
